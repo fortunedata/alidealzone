@@ -1,5 +1,5 @@
 <template name="postPage">
-	{{> postItem}}
+	<h3><a href="{{url}}" target="_blank">{{title}}</a><span>{{domain}}</span></h3> <p>{{detail}}</p>
 	<ul class="comments">
 		{{#each comments}}
 		{{> commentItem}}

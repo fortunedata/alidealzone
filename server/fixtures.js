@@ -1,4 +1,3 @@
-// 测试数据 
 if (Posts.find().count() === 0) {
   var now = new Date().getTime();
 
@@ -21,6 +20,7 @@ if (Posts.find().count() === 0) {
     userId: sacha._id,
     author: sacha.profile.name,
     url: 'http://www.aliexpress.com/item/New-1080P-HDMI-FHD-vehicle-traveling-data-recorder-wide-Angle-of-140-degrees-Four-times-digital/1815466838.html',
+    detail: 'Blue G1W w/Novatek NT96650 Processor 1080p Dash Cam - $49.18 CAD',
     submitted: new Date(now - 7 * 3600 * 1000),
     commentsCount: 2
   });
@@ -46,6 +46,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     url: 'http://www.geekbuying.com/item/TG-F3...0221_sku339456',
+    detail: 'Hotter than a ring of fire -> Electric Unicycle $209.99USD+min $125s/h',
     submitted: new Date(now - 10 * 3600 * 1000),
     commentsCount: 0
   });
@@ -55,6 +56,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     url: 'http://www.aliexpress.com/store/product/New-PC-Best-price-mini-camcorder-hidden-camera-Full-HD-1080p-MINI-DV-CAMERA-1080p-big/1302154_1932807084.html',
+    detail: '40$ Hidden camera 1080P 720P',
     submitted: new Date(now - 12 * 3600 * 1000),
     commentsCount: 0
   });

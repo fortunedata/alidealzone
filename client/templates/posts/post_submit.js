@@ -17,7 +17,8 @@ Template.postSubmit.events({
 
 		var post = {
 			url: $(e.target).find('[name=url]').val(),
-			title: $(e.target).find('[name=title]').val()
+			title: $(e.target).find('[name=title]').val(),
+			detail: $(e.target).find('[name=detail]').val()
 		};
 
 		var errors = validatePost(post);
@@ -26,7 +27,6 @@ Template.postSubmit.events({
 
 
 		Meteor.call('postInsert', post, function(error, result) {
-			// 显示错误信息并退出
 			if (error)
 				return throwError(error.reason);
 
