@@ -1,19 +1,15 @@
-<template name="postPage">
-	<h3><a href="{{url}}" target="_blank">{{title}}</a><span>{{domain}}</span></h3> <p>{{detail}}</p>
-	<div
-	class="fb-like"
-	data-share="true"
-	data-width="450"
-	data-show-faces="true">
-</div>
-<ul class="comments">
-	{{#each comments}}
-	{{> commentItem}}
-	{{/each}}
-</ul>
-{{#if currentUser}}
-{{> commentSubmit}}
-{{else}}
-<p>Please log in to leave a comment.</p>
-{{/if}}
-</template>
+	<template name="postPage">
+		<h3><a href="{{url}}" target="_blank">{{title}}</a>
+			<span>{{domain}}</span></h3>
+			<p>{{detail}}</p>
+			<ul class="comments">
+				{{#each comments}}
+				{{> commentItem}}
+				{{/each}}
+			</ul>
+			{{#if currentUser}}
+			{{> commentSubmit}}
+			{{else}}
+			<p>Please log in to leave a comment.</p>
+			{{/if}}
+		</template>
