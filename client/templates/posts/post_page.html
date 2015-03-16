@@ -1,16 +1,23 @@
 	<template name="postPage">
-		<h3><a href="{{url}}" target="_blank">{{title}}</a>
-			<span>{{domain}}</span></h3>
-			<p>{{detail}}</p>
-			<ul class="comments">
-				{{#each comments}}
-				{{> commentItem}}
-				{{/each}}
-			</ul>
-			<div class="fb-share-button" data-layout="button"></div>
-			{{#if currentUser}}
-			{{> commentSubmit}}
-			{{else}}
-			<p>Please log in to leave a comment.</p>
-			{{/if}}
-		</template>
+		<h4>{{title}}			</h4>
+		<p>Vendor :  {{domain}}   -   <a href="{{url}}" target="_blank">Web Store and Product URL</a></p>
+		<p><b>Reason for Recommendation  -  </b>{{detail}}</p>
+
+		{{#if checkVideourl}}
+		<iframe width="420" height="315"
+		src="{{getVideourl}}">
+	</iframe>
+	{{/if}}
+     <p ><b>Comments:</b></p>
+	<ul class="comments">
+		{{#each comments}}
+		{{> commentItem}}
+		{{/each}}
+	</ul>
+	{{> shareit url}}
+	{{#if currentUser}}
+	{{> commentSubmit}}
+	{{else}}
+	<p>Please log in to share your shopping experience or leave a comment.</p>
+	{{/if}}
+</template>

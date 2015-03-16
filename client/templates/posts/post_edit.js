@@ -17,18 +17,39 @@ Template.postEdit.events({
 
     var currentPostId = this._id;
 
+    var storeurl = $(e.target).find('[name=url]').val();
+
+    if (storeurl.toUpperCase().indexOf("WWW.") === 0) {
+      storeurl = "http://" + storeurl
+    };
+
+    var a = document.createElement('a');
+    a.href = storeurl;
+    var domainname = a.hostname.toUpperCase().replace("WWW.", "").replace(".COM", "");
+
+    var vdurl = $(e.target).find('[name=videourl]').val();
+
+
+    if (vdurl.toUpperCase().indexOf("WWW.") === 0) {
+      vdurl = "http://" + vdurl
+    };
+
     var postProperties = {
-      url: $(e.target).find('[name=url]').val(),
-      title: $(e.target).find('[name=title]').val()
-    }
-
+      url: storeurl,
+      title: $(e.target).find('[name=title]').val(),
+      detail: $(e.target).find('[name=detail]').val(),
+      videourl: vdurl,
+      domain: domainname
+    };
+ 
     var errors = validatePost(postProperties);
-    if (errors.title || errors.url)
-      return Session.set('postEditErrors', errors);
 
+ 
+    if (errors.title || errors.url||errors.videourl||errors.detail)
+      return Session.set('postEditErrors', errors);
+ 
     Posts.update(currentPostId, {$set: postProperties}, function(error) {
       if (error) {
-        // 向用户显示错误消息
         throwError(error.reason);
       } else {
         Router.go('postPage', {_id: currentPostId});

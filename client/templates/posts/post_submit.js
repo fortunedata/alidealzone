@@ -15,16 +15,34 @@ Template.postSubmit.events({
 	'submit form': function(e) {
 		e.preventDefault();
 
+		var storeurl = $(e.target).find('[name=url]').val();
+
+		if (storeurl.indexOf("www.") === 0) {
+			storeurl = "http://" + storeurl
+		};
+		var a = document.createElement('a');
+		a.href = storeurl;
+		var domainname = a.hostname.toUpperCase().replace("WWW.", "").replace(".COM", "");
+
+		var vdurl = $(e.target).find('[name=videourl]').val();
+
+
+		if (vdurl.indexOf("www.") === 0) {
+			vdurl = "http://" + vdurl
+		};
+
+
 		var post = {
-			url: $(e.target).find('[name=url]').val(),
+			url: storeurl,
 			title: $(e.target).find('[name=title]').val(),
-			detail: $(e.target).find('[name=detail]').val()
+			detail: $(e.target).find('[name=detail]').val(),
+			videourl: vdurl,
+			domain: domainname
 		};
 
 		var errors = validatePost(post);
-		if (errors.title || errors.url)
+		if (errors.title || errors.url||errors.videourl||errors.detail)
 			return Session.set('postSubmitErrors', errors);
-
 
 		Meteor.call('postInsert', post, function(error, result) {
 			if (error)
