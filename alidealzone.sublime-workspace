@@ -1,0 +1,289 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"u",
+				"ubuntu"
+			],
+			[
+				"Met",
+				"Meteor.subscribe	Meteor.subscribe(name [, arg1, arg2, ... ] [, callbacks])"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 385.0
+	},
+	"console":
+	{
+		"height": 364.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/meteor/alidealzone",
+		"/D/meteor/alidealzone/client",
+		"/D/meteor/alidealzone/client/stylesheets",
+		"/D/meteor/alidealzone/client/templates",
+		"/D/meteor/alidealzone/client/templates/includes",
+		"/D/meteor/alidealzone/client/templates/posts",
+		"/D/meteor/alidealzone/lib",
+		"/D/meteor/alidealzone/lib/collections",
+		"/D/meteor/alidealzone/server"
+	],
+	"file_history":
+	[
+		"/D/meteor/alidealzone/lib/collections/posts.js",
+		"/D/meteor/alidealzone/client/templates/posts/post_edit.js",
+		"/D/meteor/alidealzone/client/templates/posts/post_item.html",
+		"/D/meteor/alidealzone/client/templates/posts/post_edit.html",
+		"/D/meteor/alidealzone/client/templates/posts/post_submit.js",
+		"/D/meteor/alidealzone/client/templates/posts/post_submit.html",
+		"/D/meteor/alidealzone/client/templates/posts/post_page.html",
+		"/D/meteor/alidealzone/server/fixtures.js",
+		"/D/meteor/alidealzone/client/templates/posts/post_page.js",
+		"/D/meteor/alidealzone/client/main.js",
+		"/D/meteor/alidealzone/client/stylesheets/style.css",
+		"/D/meteor/alidealzone/client/main.html",
+		"/D/meteor/alidealzone/.meteor/local/build/programs/web.browser/app/client/main.js",
+		"/D/meteor/alidealzone/lib/facebook.js",
+		"/D/meteor/alidealzone/client/templates/comments/comment_item.html",
+		"/D/meteor/alidealzone/client/templates/includes/header.html",
+		"/D/meteor/alidealzone/lib/router.js",
+		"/D/meteor/alidealzone/mup.json",
+		"/D/meteor/alidealzone/client/templates/posts/post_item.js",
+		"/D/meteor/alidealzone/lib/collections/comments.js",
+		"/D/meteor/alidealzone/server/publications.js",
+		"/D/meteor/alidealzone/client/templates/comments/comment_submit.js",
+		"/D/meteor/alidealzone/client/templates/comments/comment_submit.html",
+		"/D/meteor/alidealzone/client/templates/comments/comment_item.js",
+		"/D/meteor/alidealzone/client/templates/posts/posts_list.js",
+		"/D/meteor/alidealzone/client/templates/posts/post_submit-BACKUP.html",
+		"/D/meteor/alidealzone/client/templates/posts/post_submit-BACKUP.js",
+		"/D/meteor/alidealzone/client/templates/includes/errors.js",
+		"/D/meteor/alidealzone/client/templates/includes/errors.html",
+		"/D/meteor/alidealzone/client/templates/application/layout.html",
+		"/D/meteor/alidealzone/client/helpers/errors.js",
+		"/D/meteor/alidealzone/lib/permissions.js",
+		"/D/meteor/alidealzone/client/templates/includes/access_denied.html",
+		"/D/meteor/alidealzone/client/helpers/config.js",
+		"/D/meteor/alidealzone/client/templates/application/not_found.html",
+		"/D/meteor/alidealzone/client/templates/includes/loading.html",
+		"/D/meteor/alidealzone/client/templates/posts/post_list.html",
+		"/D/meteor/microscope/client/templates/posts/post_submit.js",
+		"/D/meteor/microscope/server/fixtures.js",
+		"/C/Users/tony/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/tony/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/tony/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/tony/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/tony/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/tony/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/D/meteor/microscope/lib/collections/comments.js",
+		"/D/meteor/microscope/client/stylesheets/style.css",
+		"/D/meteor/microscope/client/templates/posts/post_edit.js",
+		"/D/meteor/microscope/client/templates/includes/errors.html",
+		"/D/meteor/microscope/client/helpers/errors.js",
+		"/D/meteor/microscope/client/templates/posts/errors.js",
+		"/D/meteor/microscope/client/templates/posts/errors.html",
+		"/D/meteor/microscope/client/templates/application/layout.html",
+		"/D/meteor/microscope/lib/collections/posts.js",
+		"/D/meteor/microscope/client/templates/posts/post_item.js",
+		"/D/meteor/microscope/lib/permissions.js",
+		"/D/meteor/microscope/client/templates/posts/post_item.html",
+		"/D/meteor/microscope/client/templates/posts/post_edit.html",
+		"/D/meteor/microscope/lib/router.js",
+		"/D/meteor/microscope/client/templates/posts/post_submit.html",
+		"/D/meteor/microscope/client/templates/posts/posts_list.js",
+		"/D/meteor/microscope/client/templates/includes/header.html",
+		"/D/meteor/microscope/client/templates/includes/access_denied.html",
+		"/D/meteor/microscope/client/helpers/config.js",
+		"/D/meteor/microscope/client/main.js",
+		"/D/meteor/microscope/client/templates/application/not_found.html",
+		"/D/meteor/microscope/client/templates/posts/post_page.html",
+		"/D/meteor/microscope/client/templates/includes/loading.html",
+		"/D/meteor/microscope/client/main.html",
+		"/D/meteor/microscope/server/publications.js",
+		"/D/meteor/temp/test.js",
+		"/D/meteor/microscope/client/templates/application/layout.js",
+		"/D/meteor/microscope/client/templates/posts/posts_list.html",
+		"/D/meteor/microscope/microscope.sublime-project",
+		"/C/Users/tony/AppData/Roaming/Sublime Text 2/Packages/TernJS/TernJS.sublime-settings",
+		"/D/meteor/simple-todos/simple-todos.html",
+		"/D/meteor/simple-todos/simple-todos.js",
+		"/D/meteor/simple-todos/simple-todos.css",
+		"/D/aehelp/aws_ielts/file/footer.php",
+		"/D/aehelp/aws/files/footer.php",
+		"/D/aehelp/hongkong/files/footer.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\meteor\\alidealzone",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"alert",
+			"youtube",
+			");\n",
+			"comment",
+			"getElementsByTagName",
+			"fbAsyncInit",
+			"fbAsyncInit ",
+			"microscope",
+			">",
+			"url"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 180.0
+	},
+	"project": "alidealzone.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

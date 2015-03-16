@@ -14,8 +14,24 @@
  ga('create', 'UA-56666524-1', 'auto');
  ga('send', 'pageview');
 
-
+//redirect domain to www
  var url = new String(window.location.href).toLowerCase();
 
  if (url.indexOf("http://alidealzone.com") != -1 ) 
  location.href = "http://www.alidealzone.com";
+
+//social share
+ShareIt.configure({
+    useFB: true,          // boolean (default: true)
+                          // Whether to show the Facebook button
+    useTwitter: true,     // boolean (default: true)
+                          // Whether to show the Twitter button
+    useGoogle: true,      // boolean (default: true)
+                          // Whether to show the Google+ button
+    classes: "Extra small button", // string (default: 'large btn')
+                          // The classes that will be placed on the sharing buttons, bootstrap by default.
+    iconOnly: false,      // boolean (default: false)
+                          // Don't put text on the sharing buttons
+    applyColors: true     // boolean (default: true)
+                          // apply classes to inherit each social networks background color
+  });
